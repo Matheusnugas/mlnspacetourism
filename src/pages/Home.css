@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, body > div, .app {
+    height: 100%;
+  }
+
+.homeWrapper {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+}
