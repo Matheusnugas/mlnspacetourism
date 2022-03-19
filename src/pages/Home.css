@@ -1,89 +1,175 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  @media (min-width:700px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body, body > div, .app {
+        height: 100%;
+      }
 
-html, body, body > div, .app {
-    height: 100%;
-  }
+    .homeWrapper {
+        background-image: url('../assets/home/background-home-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 100vh;
+    }
+    
+    .homeContentWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80%;
+        gap: 20%;
+    }
+    
+    .Homeheading1 {
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        color: #fff;
+        text-align: start;
+    }
+    
+    .Homeheading5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        color: #fff;
+        letter-spacing: 4.75px;
+        text-align: start;
+    }
+    
+    .HomebodyText {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-size: 1.1em;
+        padding-top: 5%;
+        text-align: start;
+    }
+    
+    .ctaWrapper {
+        max-width: 50%;
+    }
+    
+    .buttonDiv {
+        border-radius: 50%;
+        background-color: white;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        transition: 0.4s;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
+    
+    .buttonDiv:hover {
+    -webkit-box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3); 
+    box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3);
+    }
+    
+    .buttonDiv button {
+        border: none;
+        background-color: white;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        color: black;
+        font-family: 'Bellefair', serif;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+    
+    ::selection {
+        color: #0E151D;
+        background: #fff;
+      }
+  }  
 
-.homeWrapper {
-    background-image: url('../assets/home/background-home-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    height: 100vh;
-}
+  @media (max-width:700px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-.homeContentWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
-    min-height: 80%;
-    gap: 20%;
-}
+    .homeWrapper {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;  
+        color: white;
+    }
 
-.Homeheading1 {
-    font-family: 'Bellefair', serif;
-    font-size: 150px;
-    color: #fff;
-    text-align: start;
-}
+    .homeContentWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80%;
+        gap: 9em;
+    }
 
-.Homeheading5 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 4.75px;
-    text-align: start;
-}
+    .buttonDiv {
+        border-radius: 50%;
+        background-color: white;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        transition: 0.4s;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
+    
+    .buttonDiv:hover {
+    -webkit-box-shadow: 0px 0px 2px 35px rgba(208,214,249,0.3); 
+    box-shadow: 0px 0px 2px 35px rgba(208,214,249,0.3);
+    }
+    
+    .buttonDiv button {
+        border: none;
+        background-color: white;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        color: black;
+        font-family: 'Bellefair', serif;
+        font-size: 1.8em;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
 
-.HomebodyText {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1.5px;
-    color: #fff;
-    font-size: 1.1em;
-    padding-top: 5%;
-    text-align: start;
-}
+    .Homeheading1 {
+        font-family: 'Bellefair', serif;
+        font-size: 100px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .Homeheading5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 4.75px;
+        text-align: center;
+    }
+    
+    .HomebodyText {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-size: 1em;
+        padding-top: 5%;
+        text-align: center;
+    }
 
-.ctaWrapper {
-    /* border: 2px solid green; */
-    max-width: 50%;
-}
-
-.buttonDiv {
-    border-radius: 50%;
-    background-color: white;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    transition: 0.4s;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
-}
-
-.buttonDiv:hover {
--webkit-box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3); 
-box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3);
-}
-
-.buttonDiv button {
-    border: none;
-    background-color: white;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    color: black;
-    font-family: 'Bellefair', serif;
-    font-size: 1.8em;
-    cursor: pointer;
-}
-
-::selection {
-    color: #0E151D;
-    background: #fff;
+    .ctaWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
   }
