@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import capsuleImg from "../assets/technology/image-space-capsule-portrait.jpg";
+import mobileCapsule from "../assets/technology/image-space-capsule-landscape.jpg";
+
 import Nav from "../Components/Nav";
 import "./Tech.css";
 
@@ -42,6 +44,11 @@ function SpaceCapsuleTech() {
         </div>
         <div className="techIMGWrapper">
           <img className="techImage" src={capsuleImg} alt="spaceTech" />
+          <img
+            className="mobileTechImage"
+            src={mobileCapsule}
+            alt="spaceTech"
+          />
         </div>
       </div>
     </div>

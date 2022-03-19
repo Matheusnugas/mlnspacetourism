@@ -1,129 +1,262 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@media (min-width:700px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body, body > div, .app {
+        height: 100%;
+    }
+    
+    .crewWrapper {
+        background-image: url('../assets/crew/background-crew-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 100vh;
+        color: white;
+    }
+    
+    .crewContentWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+        min-height: 85%;
+        gap:3%;
+    }
+    
+    .crewCTA {
+        /* border: 2px solid green; */
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .DouglasCrewImageWrapper {
+        padding-top: 3%;
+        max-width: 85%;
+    }
+    
+    .DouglasCrewImage {
+        width: 75%;
+    }
+    .MarkCrewImageWrapper {
+        padding-top: 3%;
+        max-width: 85%;
+    }
+    .MarkCrewImage {
+        width: 85%;
+    }
+    
+    .VictorCrewImageWrapper {
+        padding-top: 7%;
+        max-width: 75%;
+    }
+    
+    .VictorCrewImage {
+        width: 75%;
+    }
+
+    .menuCircleContainer {
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+    }
+    
+    .crewNumberHeading{ 
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 30px;
+        color: #979797;
+        letter-spacing: 4.75px;
+        text-align: start;
+        font-weight: bolder;
+    }
+    
+    .crewHeading5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        color: #fff;
+        letter-spacing: 4.75px;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        gap: 1.02em;
+        padding-bottom: 10%;
+    }
+    
+    .crewHeading3 {
+        font-family: 'Bellefair', serif;
+        font-size: 56px;
+        color: #fff;
+        text-align: start;
+    }
+    
+    .crewHeading4 {
+        font-family: 'Bellefair', serif;
+        font-size: 32px;
+        color: #979797;
+        text-align: start;
+    }
+    
+    .crewBodyText {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-size: 1.1em;
+        padding-top: 5%;
+        text-align: start;
+        width: 95%;
+    }
+    
+    .menuCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #363841;
+        border: 1px solid #fff;
+        cursor: pointer;
+        /* border: 1px solid #fff; */
+    }
+    
+    .menuCircle:hover {
+        background-color: #979797;
+    }
+    
+    .menuCircle:active {
+        background-color: #fff;
+    }
 }
 
-html, body, body > div, .app {
-    height: 100%;
-}
+@media (max-width:700px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .crewWrapper {
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        color: white;
+        height: 100vh;
+        overflow: hidden;
+    }
 
-.crewWrapper {
-    background-image: url('../assets/crew/background-crew-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    height: 100vh;
-    color: white;
-}
+    .crewContentWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-.crewContentWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
-    min-height: 85%;
-    gap:3%;
-}
+    .crewNumberHeading{ 
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 24px;
+        color: #979797;
+        letter-spacing: 4.75px;
+        text-align: start;
+        font-weight: bolder;
+    }
 
-.crewCTA {
-    /* border: 2px solid green; */
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 75vh;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+    .crewHeading5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        color: #fff;
+        letter-spacing: 4.75px;
+        gap: 1.02em;
+    }
 
-.DouglasCrewImageWrapper {
-    padding-top: 3%;
-    max-width: 85%;
-}
+    .crewHeading3 {
+        margin-top: 2%;
+        font-family: 'Bellefair', serif;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .crewHeading4 {
+        font-family: 'Bellefair', serif;
+        font-size: 32px;
+        color: #979797;
+        text-align: center;
+    }
 
-.DouglasCrewImage {
-    width: 75%;
-}
-.MarkCrewImageWrapper {
-    padding-top: 3%;
-    max-width: 85%;
-}
-.MarkCrewImage {
-    width: 85%;
-}
+    .crewBodyText {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        width: 95%;
+    }
 
-.VictorCrewImageWrapper {
-    padding-top: 7%;
-    max-width: 75%;
-}
+    .DouglasCrewImageWrapper {
+        max-width: 80%;
+        position: fixed;
+        bottom: 0;    
+        margin-left: 25%;
+    }
+    
+    .DouglasCrewImage {
+        width: 80%;
+    }
 
-.VictorCrewImage {
-    width: 75%;
-}
-.menuCircleContainer {
-    display: flex;
-    width: 30%;
-    justify-content: space-around;
-}
+    .MarkCrewImageWrapper {
+        max-width: 70%;
+        position: fixed;
+        bottom: 0;   
+        margin-left: 15%;
+    }
 
-.crewNumberHeading{ 
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
-    color: #979797;
-    letter-spacing: 4.75px;
-    text-align: start;
-    font-weight: bolder;
-}
+    .MarkCrewImage {
+        width: 65%;
+    }
+    
+    .VictorCrewImageWrapper {
+        max-width: 70%;
+        position: fixed;
+        bottom: 0;
+        margin-left: 20%;
+    }
+    
+    .VictorCrewImage {
+        width: 75%;
+    }
+        
+    .crewCTA {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
 
-.crewHeading5 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 4.75px;
-    text-align: start;
-    display: flex;
-    align-items: center;
-    gap: 1.02em;
-    padding-bottom: 10%;
-}
+    .menuCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #363841;
+        border: 1px solid #fff;
+        cursor: pointer;
+        /* border: 1px solid #fff; */
+    }
 
-.crewHeading3 {
-    font-family: 'Bellefair', serif;
-    font-size: 56px;
-    color: #fff;
-    text-align: start;
-}
-
-.crewHeading4 {
-    font-family: 'Bellefair', serif;
-    font-size: 32px;
-    color: #979797;
-    text-align: start;
-}
-
-.crewBodyText {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1.5px;
-    color: #fff;
-    font-size: 1.1em;
-    padding-top: 5%;
-    text-align: start;
-    width: 95%;
-}
-
-.menuCircle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #363841;
-    border: 1px solid #fff;
-    cursor: pointer;
-    /* border: 1px solid #fff; */
-}
-
-.menuCircle:hover {
-    background-color: #979797;
-}
-
-.menuCircle:active {
-    background-color: #fff;
+    .menuCircleContainer {
+        display: flex;
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .menuCircle:hover {
+        background-color: #979797;
+    }
+    
+    .menuCircle:active {
+        background-color: #fff;
+    }
 }

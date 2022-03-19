@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-html, body, body > div, .app {
-    height: 100%;
-}
-
 @media (min-width:700px) {
     .destinationWrapper {
         background-image: url('../assets/destination/background-destination-desktop.jpg');
@@ -25,12 +21,10 @@ html, body, body > div, .app {
     }
     
     .destinationCTA {
-        /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         gap: 5em;
         align-items: flex-start;
-        /* border: 2px solid red; */
         height: 70vh;
     }
     
@@ -55,7 +49,6 @@ html, body, body > div, .app {
         gap: 1.02em;
     }
     .destinationInfo{
-        /* border: 2px solid blue; */
         height: 70vh;
         display: flex;
         flex-direction: column;
@@ -66,7 +59,6 @@ html, body, body > div, .app {
     
     .planetLinks {
         display: flex;
-        /* border: 2px solid red; */
         width: 90%;
         justify-content: space-around;
         font-family: 'Barlow Condensed', sans-serif;
@@ -138,6 +130,10 @@ html, body, body > div, .app {
         color: #fff;
         text-align: start;
         padding-top: 10px;
+    }
+
+    .mobileTechImage {
+        display: none;
     }
 }
 
@@ -217,7 +213,6 @@ html, body, body > div, .app {
     }
 
     .destinationInfo{
-        /* border: 2px solid blue; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

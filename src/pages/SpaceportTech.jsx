@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import spaceportImg from "../assets/technology/image-spaceport-portrait.jpg";
+import mobileSpaceport from "../assets/technology/image-spaceport-landscape.jpg";
 import Nav from "../Components/Nav";
 import "./Tech.css";
 
@@ -42,6 +43,11 @@ function SpaceportTech() {
         </div>
         <div className="techIMGWrapper">
           <img className="techImage" src={spaceportImg} alt="spaceTech" />
+          <img
+            className="mobileTechImage"
+            src={mobileSpaceport}
+            alt="spaceTech"
+          />
         </div>
       </div>
     </div>

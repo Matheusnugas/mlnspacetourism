@@ -7,127 +7,264 @@
 html, body, body > div, .app {
     height: 100%;
 }
-
-.techWrapper {
-    background-image: url('../assets/technology/background-technology-desktop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;  
-    height: 100vh;
-    color: #fff;
+@media (min-width:700px) {
+    .techWrapper {
+        background-image: url('../assets/technology/background-technology-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 100vh;
+        color: #fff;
+    }
+    
+    .techContentWrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 80%;
+        gap: 12%;
+    }
+    
+    .techNumberHeading {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 30px;
+        color: #979797;
+        letter-spacing: 4.75px;
+        text-align: start;
+        font-weight: bolder;
+    }
+    
+    .techHeadingSmall {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        color: #979797;
+        letter-spacing: 2.7px;
+    }
+    
+    .techTitle {
+        font-family: 'Bellefair', serif;
+        font-size: 56px;
+        color: #fff;
+        text-align: start;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .techNamePage {
+        display: flex;
+        align-items: center;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        color: #fff;
+        letter-spacing: 4.75px;
+        gap: 1rem;
+    }
+    
+    .techBodyText {
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        font-size: 1.1em;
+        letter-spacing: 2.7px;
+        padding-top: 3%;
+        text-align: start;
+    }
+    
+    .techCTA {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .techButtonTextWrapper {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .techButtonWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .techButton {
+        width: 90px;
+        height: 90px;
+        border: 1px solid grey;
+        border-radius: 50%;
+        background-color: #0B0D17;
+        transition: 0.3s;
+        color: #fff;
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+    
+    .techButton:hover {
+        background-color: #fff;
+        color: #0B0D17;
+    }
+    
+    .selectedTechButton {
+        width: 90px;
+        height: 90px;
+        border: 1px solid grey;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: 0.3s;
+        color: #0B0D17;
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+    
+    .techImage {
+        width: 400px;
+        height: 450px;
+        border-radius: 5px;
+    }
 }
 
-.techContentWrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 80%;
-    gap: 12%;
-}
+@media (max-width:700px) {
+    .techWrapper {
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 100vh;
+    }
 
-.techNumberHeading {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
-    color: #979797;
-    letter-spacing: 4.75px;
-    text-align: start;
-    font-weight: bolder;
-}
+    .techContentWrapper {
+        display: flex;
+        margin-top: 10%;
+        flex-direction: column;
+        width: 100%;
+    }
 
-.techHeadingSmall {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    color: #979797;
-    letter-spacing: 2.7px;
-}
+    .techCTA {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.techTitle {
-    font-family: 'Bellefair', serif;
-    font-size: 56px;
-    color: #fff;
-    text-align: start;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
+    .techIMGWrapper {
+        width: 100%;
+        margin-top: 10%;
+    }
 
-.techNamePage {
-    display: flex;
-    align-items: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 4.75px;
-    gap: 1rem;
-}
+    .techImage {
+        max-width: 100%;
+    }
 
-.techBodyText {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-    font-size: 1.1em;
-    letter-spacing: 2.7px;
-    padding-top: 3%;
-    text-align: start;
-}
+    .techImage {
+        display: none;
+    }
 
-.techCTA {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 75vh;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+    .mobileTechImage {
+        width: 100%;
+    }
 
-.techButtonTextWrapper {
-    display: flex;
-    align-items: center;
-    gap: 5%;
-    justify-content: flex-start;
-    width: 100%;
-}
 
-.techButtonWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
+    .techNumberHeading {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 24px;
+        color: #979797;
+        letter-spacing: 4.75px;
+        text-align: start;
+        font-weight: bolder;
+        margin-right: 10px;
+    }
+    
+    .techNamePage {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        color: #fff;
+        letter-spacing: 4.75px;
+    }
 
-.techButton {
-    width: 90px;
-    height: 90px;
-    border: 1px solid grey;
-    border-radius: 50%;
-    background-color: #0B0D17;
-    transition: 0.3s;
-    color: #fff;
-    font-family: 'Bellefair', serif;
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bolder;
-}
+    .techHeadingSmall {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        color: #979797;
+        letter-spacing: 2.7px;
+        text-align: center;
+        padding-top: 5%;
+    }
 
-.techButton:hover {
-    background-color: #fff;
-    color: #0B0D17;
-}
+    .techTitle {
+        font-family: 'Bellefair', serif;
+        font-size: 42px;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
 
-.selectedTechButton {
-    width: 90px;
-    height: 90px;
-    border: 1px solid grey;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: 0.3s;
-    color: #0B0D17;
-    font-family: 'Bellefair', serif;
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bolder;
-}
+    .techBodyText {
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        font-size: 1.1em;
+        letter-spacing: 2.7px;
+        padding-top: 5%;
+        text-align: center;
+    }
 
-.techImage {
-    width: 400px;
-    height: 450px;
-    border-radius: 5px;
+    .techButtonTextWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .techButtonWrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .techButton {
+        width: 70px;
+        height: 70px;
+        border: 1px solid grey;
+        border-radius: 50%;
+        background-color: #0B0D17;
+        transition: 0.3s;
+        color: #fff;
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+    
+    .techButton:hover {
+        background-color: #fff;
+        color: #0B0D17;
+    }
+    
+    .selectedTechButton {
+        width: 70px;
+        height: 70px;
+        border: 1px solid grey;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: 0.3s;
+        color: #0B0D17;
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
 }

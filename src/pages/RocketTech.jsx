@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import rocketImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import mobileRocket from "../assets/technology/image-launch-vehicle-landscape.jpg";
 import Nav from "../Components/Nav";
 import "./Tech.css";
 
@@ -42,6 +43,7 @@ function RocketTech() {
         </div>
         <div className="techIMGWrapper">
           <img className="techImage" src={rocketImg} alt="spaceTech" />
+          <img className="mobileTechImage" src={mobileRocket} alt="spaceTech" />
         </div>
       </div>
     </div>
