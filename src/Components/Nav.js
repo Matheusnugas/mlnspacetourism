@@ -28,7 +28,7 @@ function Nav() {
             <span className="navWord">CREW</span>
           </a>
         </Link>
-        <Link to="/tech">
+        <Link to="/rocketTech">
           <a className="navLink" href="/tech">
             <span className="navSpan">03</span>
             <span className="navWord">TECHNOLOGY</span>

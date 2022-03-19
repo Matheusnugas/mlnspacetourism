@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import rocketImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import Nav from "../Components/Nav";
 import "./Tech.css";
-import rocketImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
 
-function Tech() {
-  const [pageState, setPageState] = useState();
+function RocketTech() {
   return (
     <div className="techWrapper">
       <Nav />
@@ -17,9 +17,15 @@ function Tech() {
           </div>
           <div className="techButtonTextWrapper">
             <div className="techButtonWrapper">
-              <button className="selectedTechButton">1</button>
-              <button className="techButton">2</button>
-              <button className="techButton">3</button>
+              <Link to="/rocketTech">
+                <button className="selectedTechButton">1</button>
+              </Link>
+              <Link to="/spaceport">
+                <button className="techButton">2</button>
+              </Link>
+              <Link to="/spacecapsule">
+                <button className="techButton">3</button>
+              </Link>
             </div>
             <div className="techTextWrapper">
               <p className="techHeadingSmall">THE TERMINOLOGY</p>
@@ -42,4 +48,4 @@ function Tech() {
   );
 }
 
-export default Tech;
+export default RocketTech;
