@@ -1,0 +1,69 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15%;
+    align-self: center;
+}
+
+.navLinkContainer {
+    min-height: 4.5em;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    position: relative;
+    z-index: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navLogo {
+    margin-left: 3em;
+}
+
+.navHR {
+    width: 35%;
+    height: 1px;
+    border: none;
+    background-color: grey;
+    position: absolute;
+    z-index: 1;
+    left: 17%
+}
+
+.navLink {
+    margin-left: 3em;
+    text-decoration: none;
+    color: #fff;
+    transform-origin: bottom right;
+    transition: transform 1 ease-out;
+}
+
+.navWord:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1.7em;
+    text-decoration-color: #D0D6F9;
+}
+
+.navWord:active {
+    text-decoration-color: #fff;
+    text-decoration-thickness: 2.5px;
+}
+
+
+.navSpan {
+    margin-right: 6%;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 17px;
+}

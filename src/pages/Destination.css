@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, body > div, .app {
+    height: 100%;
+}
+
+.destinationWrapper {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 100vh;
+    color: #fff;
+}
+
+.destinationContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    gap: 20%;
+}
+
+.destinationCTA {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    height: 70vh;
+}
+
+.planetImage {
+    width: 80%;
+}
+
+.planetNumberHeading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: #979797;
+    letter-spacing: 4.75px;
+    text-align: start;
+    font-weight: bolder;
+}
+
+.destinationPickHeading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 4.75px;
+    gap: 1.02em;
+}
+.destinationInfo{
+    /* border: 2px solid blue; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+.planetLinks {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 90%;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: bolder;
+}
+
+.planetLinks a {
+    color: #fff;
+    text-underline-offset: 8px;
+}
+
+.planetHeader1 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    color: #fff;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.planetBodyText {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 2.7px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.planetHR {
+    margin-top: 10%;
+    width: 90%;
+    height: 1px;
+    border: none;
+    background-color: grey;
+}
+
+.travelWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.firstTravelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondTravelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.travelInfo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: bolder;
+}
+
+.travelDistance {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    color: #fff;
+    text-align: start;
+    padding-top: 10px;
+}

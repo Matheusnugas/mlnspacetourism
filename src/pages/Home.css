@@ -14,3 +14,76 @@ html, body, body > div, .app {
     background-size: cover;  
     height: 100vh;
 }
+
+.homeContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    min-height: 80%;
+    gap: 20%;
+}
+
+.Homeheading1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: #fff;
+    text-align: start;
+}
+
+.Homeheading5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 4.75px;
+    text-align: start;
+}
+
+.HomebodyText {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-size: 1.1em;
+    padding-top: 5%;
+    text-align: start;
+}
+
+.ctaWrapper {
+    /* border: 2px solid green; */
+    max-width: 50%;
+}
+
+.buttonDiv {
+    border-radius: 50%;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    transition: 0.4s;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.buttonDiv:hover {
+-webkit-box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3); 
+box-shadow: 0px 0px 2px 28px rgba(208,214,249,0.3);
+}
+
+.buttonDiv button {
+    border: none;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    color: black;
+    font-family: 'Bellefair', serif;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+::selection {
+    color: #0E151D;
+    background: #fff;
+  }
