@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../Components/Nav";
 import "./Tech.css";
 import rocketImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
 
 function Tech() {
-  //   const [pageState, setPageState] = useState();
+  const [pageState, setPageState] = useState();
   return (
     <div className="techWrapper">
       <Nav />
